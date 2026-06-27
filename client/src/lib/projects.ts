@@ -1,6 +1,43 @@
 import { type Project } from "@/lib/types";
 
 export const projects: Project[] = [
+    {
+    id: 7,
+    title: "Edumeup",
+    subtitle: "Learning Platform",
+    tech: ["React", "Next.js", "PostgreSQL", "Moodle"],
+    type: "Full-Stack",
+    description: "Learning platform where students, teachers, and schools can buy and enroll in courses. Integrated with Moodle backend for comprehensive course management and learning experience.",
+    link: "https://eduzipzip.vercel.app",
+    github: "https://github.com/Amna903/edu.git",
+    category: "fullstack",
+    size: "wide"
+  },
+    {
+    id: 11,
+    title: "DLLM",
+    subtitle: "Restaurant Management",
+    tech: ["React", "Node.js", "Firebase"],
+    type: "Full-Stack",
+    description: "Restaurant app with dual-side management. Admin portal for restaurant operations and client-facing ordering system.",
+    link: "https://dllm.co.ao",
+    category: "fullstack",
+    size: "wide",
+    github: "https://github.com/Amna903/crousal.git"
+  },
+    {
+    id: 10,
+    title: "Arwa Portfolio",
+    subtitle: "Multilingual Site",
+    tech: ["Java", "HTML/CSS"],
+    type: "Web",
+    description: "Form-based website collecting info in Urdu & Arabic.",
+    link: "https://arwa-web-seven.vercel.app",
+    category: "web",
+    size: "large",
+    video: "videos/arwa.mp4",
+    github: "https://github.com/AnzaTamveel/ArwaPortfolio"
+  },
   {
     id: 1,
     title: "Active Pulse",
@@ -13,17 +50,7 @@ export const projects: Project[] = [
     video: "videos/activeplus.mp4"
 
   },
-  {
-    id: 6,
-    title: "Riskify.ai",
-    subtitle: "AI SWMS Generator",
-    tech: ["Full-Stack", "AWS", "DevOps"],
-    type: "SaaS",
-    description: "AI-powered platform to generate safety & method statements. Live production app with full CI/CD pipeline.",
-    link: "https://app.riskifysafety.com",
-    category: "fullstack",
-    size: "wide"
-  },
+
   {
     id: 2,
     title: "Remittance DApp",
@@ -69,7 +96,7 @@ export const projects: Project[] = [
     video: "videos/door.mp4"
   },
   {
-    id: 11,
+    id: 12,
     title: "WIZ Game",
     subtitle: "Maze Strategy",
     tech: ["Java", "Custom Engine"],
@@ -79,18 +106,7 @@ export const projects: Project[] = [
     size: "normal",
     video: "videos/maze.mp4"
   },
-  {
-    id: 7,
-    title: "Arwa Portfolio",
-    subtitle: "Multilingual Site",
-    tech: ["Java", "HTML/CSS"],
-    type: "Web",
-    description: "Form-based website collecting info in Urdu & Arabic.",
-    category: "web",
-    size: "normal",
-    video: "videos/arwa.mp4",
-    github: "https://github.com/AnzaTamveel/ArwaPortfolio"
-  },
+
   {
     id: 8,
     title: "Review Bot",
@@ -102,6 +118,18 @@ export const projects: Project[] = [
     size: "normal",
     video: "videos/bot.mov",
     github:"https://github.com/Amna903/bot"
+  },
+    {
+    id: 6,
+    title: "Riskify.ai",
+    subtitle: "AI SWMS Generator",
+    tech: ["Full-Stack", "AWS", "DevOps"],
+    type: "SaaS",
+    description: "AI-powered platform to generate safety & method statements. Live production app with full CI/CD pipeline.",
+    link: "https://app.riskifysafety.com",
+    category: "fullstack",
+    size: "wide",
+    github: "https://github.com/michaeldew01-creator/riskify.git"
   },
   {
     id: 9,

@@ -65,7 +65,14 @@ export default function ProjectDetails() {
                 )}
               </div>
 
-              <div className="flex gap-4 pt-4">
+              <div className="flex flex-col gap-3 pt-4">
+  {project.link && (
+    <a href={project.link} target="_blank" rel="noopener noreferrer" className="w-full">
+      <Button className="w-full bg-secondary text-black hover:bg-secondary/90">
+        <Globe className="mr-2 h-4 w-4" /> Visit Site
+      </Button>
+    </a>
+  )}
   {project.github ? (
     <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1">
       <Button className="flex-1 bg-white text-black hover:bg-white/90">

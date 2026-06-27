@@ -63,23 +63,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
   const containerClasses = "group relative w-[85vw] md:w-[450px] h-[600px] rounded-[2.5rem] overflow-hidden bg-card border border-white/10 hover:border-primary/50 transition-colors duration-500 block shadow-2xl hover:shadow-primary/20";
 
-  // External Link for Riskify
-  if (project.link) {
-    return (
-      <a
-        href={project.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={containerClasses}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60 z-0" />
-        <div className="absolute inset-0 bg-[url('https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png')] bg-repeat opacity-[0.03] mix-blend-overlay pointer-events-none z-0" />
-        <CardContent />
-      </a>
-    );
-  }
-
-  // Internal Link for others
   return (
     <Link href={`/project/${project.id}`}>
       <div className={containerClasses}>

@@ -2,7 +2,7 @@ import { useRoute, Link } from "wouter";
 import { projects } from "@/lib/projects";
 import { Navbar } from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Play, Github, Globe } from "lucide-react";
+import { ArrowLeft, Play, Github, Globe, Download } from "lucide-react";
 import { motion } from "framer-motion";
 import NotFound from "@/pages/not-found";
 
@@ -73,14 +73,35 @@ export default function ProjectDetails() {
       </Button>
     </a>
   )}
+  {project.download && !project.apk && (
+    <div className="flex gap-2">
+      <a href="/dist/myfile" download className="flex-1">
+        <Button className="w-full bg-primary text-white hover:bg-primary/90">
+          <Download className="mr-2 h-4 w-4" /> Windows
+        </Button>
+      </a>
+      <a href="/dist/myfile.app" download className="flex-1">
+        <Button className="w-full bg-primary text-white hover:bg-primary/90">
+          <Download className="mr-2 h-4 w-4" /> macOS
+        </Button>
+      </a>
+    </div>
+  )}
+  {project.apk && (
+    <a href="/app-release (2).apk" download className="w-full">
+      <Button className="w-full bg-primary text-white hover:bg-primary/90">
+        <Download className="mr-2 h-4 w-4" /> Download APK
+      </Button>
+    </a>
+  )}
   {project.github ? (
-    <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1">
-      <Button className="flex-1 bg-white text-black hover:bg-white/90">
+    <a href={project.github} target="_blank" rel="noopener noreferrer" className="w-full">
+      <Button className="w-full bg-white text-black hover:bg-white/90">
         <Github className="mr-2 h-4 w-4" /> Source Code
       </Button>
     </a>
   ) : (
-    <Button className="flex-1 bg-white/30 text-black/50 cursor-not-allowed">
+    <Button className="w-full bg-white/30 text-black/50 cursor-not-allowed">
       <Github className="mr-2 h-4 w-4" /> Source Code
     </Button>
   )}

@@ -2,8 +2,33 @@ import { type Project } from "@/lib/types";
 
 export const projects: Project[] = [
     {
-    id: 7,
-    title: "Edumeup",
+    id: 1,
+    title: "Study Planner",
+    subtitle: "AI-Powered Study App",
+    tech: ["Kotlin", "Android", "AI"],
+    type: "Mobile App",
+    description: "Comprehensive AI study planner app with features including smart notes, streak tracking, personal classrooms, flashcards, note summaries, quizzes, and timetables. Complete learning management system for students.",
+    github: "https://github.com/AmanAtiq/studyplanner.git",
+    category: "mobile",
+    size: "large",
+    download: true,
+    apk: true
+  },
+    {
+    id: 2,
+    title: "Solitaire",
+    subtitle: "Card Game",
+    tech: ["Python"],
+    type: "Desktop App",
+    description: "Classic Solitaire card game built with Python. Fully functional desktop application with executables for both macOS and Windows.",
+    github: "https://github.com/Amna903/solitarefinal.git",
+    category: "game",
+    size: "normal",
+    download: true
+  },
+    {
+    id: 3,
+    title: "EduZip",
     subtitle: "Learning Platform",
     tech: ["React", "Next.js", "PostgreSQL", "Moodle"],
     type: "Full-Stack",
@@ -14,7 +39,7 @@ export const projects: Project[] = [
     size: "wide"
   },
     {
-    id: 11,
+    id: 4,
     title: "DLLM",
     subtitle: "Restaurant Management",
     tech: ["React", "Node.js", "Firebase"],
@@ -26,7 +51,7 @@ export const projects: Project[] = [
     github: "https://github.com/Amna903/crousal.git"
   },
     {
-    id: 10,
+    id: 5,
     title: "Arwa Portfolio",
     subtitle: "Multilingual Site",
     tech: ["Java", "HTML/CSS"],
@@ -39,7 +64,7 @@ export const projects: Project[] = [
     github: "https://github.com/AnzaTamveel/ArwaPortfolio"
   },
   {
-    id: 1,
+    id: 6,
     title: "Active Pulse",
     subtitle: "Fitness & Activity Tracking",
     tech: ["Flutter", "Dart"],
@@ -52,7 +77,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: 2,
+    id: 7,
     title: "Remittance DApp",
     subtitle: "Crypto Transfers",
     tech: ["Ionic", "React", "Solidity"],
@@ -63,7 +88,7 @@ export const projects: Project[] = [
     video: "videos/r.mp4"
   },
   {
-    id: 4,
+    id: 8,
     title: "Relationship AI",
     subtitle: "AI Coach & Journal",
     tech: ["GPT-4", "Firebase"],
@@ -74,7 +99,7 @@ export const projects: Project[] = [
     video: "videos/app.mov"
   },
   {
-    id: 3,
+    id: 9,
     title: "Pocket Store",
     subtitle: "Loan Management",
     tech: ["Ionic", "Angular"],
@@ -85,7 +110,7 @@ export const projects: Project[] = [
     video: "videos/0720.mov"
   },
   {
-    id: 5,
+    id: 10,
     title: "Doorlink TM",
     subtitle: "Access Platform",
     tech: ["Ionic", "Firebase"],
@@ -96,7 +121,7 @@ export const projects: Project[] = [
     video: "videos/door.mp4"
   },
   {
-    id: 12,
+    id: 11,
     title: "WIZ Game",
     subtitle: "Maze Strategy",
     tech: ["Java", "Custom Engine"],
@@ -108,7 +133,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: 8,
+    id: 12,
     title: "Review Bot",
     subtitle: "Auto Poster",
     tech: ["Python"],
@@ -120,7 +145,7 @@ export const projects: Project[] = [
     github:"https://github.com/Amna903/bot"
   },
     {
-    id: 6,
+    id: 13,
     title: "Riskify.ai",
     subtitle: "AI SWMS Generator",
     tech: ["Full-Stack", "AWS", "DevOps"],
@@ -132,7 +157,7 @@ export const projects: Project[] = [
     github: "https://github.com/michaeldew01-creator/riskify.git"
   },
   {
-    id: 9,
+    id: 14,
     title: "Code Formatter",
     subtitle: "AST Parser",
     tech: ["Python"],

@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Projects } from "@/components/Projects";
-import { Github, Linkedin, Mail, ArrowUpRight } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowUpRight, MessageCircle } from "lucide-react";
 
 export default function Home() {
   return (
@@ -26,6 +26,13 @@ export default function Home() {
             </div>
             
             <div className="flex flex-col gap-4 items-start md:items-end">
+  {/* WhatsApp */}
+  <a href="https://wa.me/923213999201" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 text-2xl font-bold hover:text-[#25D366] transition-colors">
+    <MessageCircle className="group-hover:scale-110 transition-transform" />
+    WhatsApp
+    <ArrowUpRight className="opacity-0 group-hover:opacity-100 transition-opacity" />
+  </a>
+
   {/* Email link remains the same */}
   <a href="mailto:aseaamk75@gmail.com" className="group flex items-center gap-4 text-2xl font-bold hover:text-primary transition-colors">
     <Mail className="group-hover:scale-110 transition-transform" />

@@ -33,37 +33,37 @@
   --font-heading: 'Fredoka', sans-serif;
 }
 
-/* Modern Dark Theme with Noise */
+/* Sophisticated Dark Theme */
 :root {
-  --background: 260 30% 8%;
+  --background: 265 35% 6%;
   --foreground: 0 0% 100%;
 
-  --card: 260 30% 12%;
+  --card: 265 30% 11%;
   --card-foreground: 0 0% 100%;
-  
-  --popover: 260 30% 12%;
+
+  --popover: 265 30% 11%;
   --popover-foreground: 0 0% 100%;
 
-  --primary: 320 100% 70%;
+  --primary: 310 95% 62%;
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 180 100% 50%;
-  --secondary-foreground: 260 30% 8%;
+  --secondary: 160 95% 45%;
+  --secondary-foreground: 265 35% 6%;
 
-  --muted: 260 20% 20%;
-  --muted-foreground: 260 10% 60%;
-  
-  --accent: 280 100% 70%;
+  --muted: 265 20% 18%;
+  --muted-foreground: 265 10% 55%;
+
+  --accent: 280 90% 58%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
 
-  --border: 260 20% 20%;
-  --input: 260 20% 20%;
-  --ring: 320 100% 70%;
+  --border: 265 25% 18%;
+  --input: 265 25% 18%;
+  --ring: 310 95% 62%;
 
-  --radius: 1.5rem;
+  --radius: 1rem;
 }
 
 @layer base {

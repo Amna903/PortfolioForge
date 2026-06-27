@@ -8,16 +8,16 @@ export function Projects() {
   const containerRef = useRef<HTMLDivElement>(null);
   
   return (
-    <section id="projects" className="py-20 relative overflow-hidden">
-      <div className="px-6 mb-10 flex items-end justify-between max-w-[1800px] mx-auto">
-        <div>
-          <h2 className="text-5xl md:text-7xl font-bold font-heading text-white mb-2">
-            Selected <span className="text-primary">Works</span>
+    <section id="projects" className="py-32 relative overflow-hidden">
+      <div className="px-6 mb-16 flex items-end justify-between max-w-[1800px] mx-auto">
+        <div className="max-w-2xl">
+          <h2 className="text-5xl md:text-7xl lg:text-7xl font-bold font-heading text-white mb-4">
+            Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Portfolio</span>
           </h2>
-          <p className="text-muted-foreground text-lg">Swipe to explore</p>
+          <p className="text-white/50 text-lg font-light">Diverse projects spanning mobile, web3, AI, and more</p>
         </div>
-        <div className="hidden md:flex items-center gap-2 text-white/50">
-          <span>Scroll</span> <ArrowRight className="animate-pulse" />
+        <div className="hidden lg:flex items-center gap-3 text-white/40">
+          <span className="text-sm">Scroll to explore</span> <ArrowRight className="animate-pulse w-5 h-5" />
         </div>
       </div>
 

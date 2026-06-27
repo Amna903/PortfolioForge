@@ -11,5 +11,7 @@ export interface Project {
   video?: string; // Path to video file
   category: 'mobile' | 'web' | 'web3' | 'ai' | 'fullstack' | 'tool' | 'game';
   size?: 'normal' | 'wide' | 'tall' | 'large';
-   github?: string; 
+  github?: string;
+  download?: boolean; // Indicates if downloadable files are available
+  apk?: boolean; // Indicates if APK file is available
 }

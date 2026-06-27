@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Github, Linkedin, Mail } from "lucide-react";
+import { Menu, X, Github, Linkedin, Mail, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Navbar() {
@@ -31,6 +31,7 @@ export function Navbar() {
           <button onClick={() => scrollTo('contact')} className="text-sm font-bold hover:text-primary transition-colors">Contact</button>
           <div className="w-px h-4 bg-white/10 mx-2"></div>
           <div className="flex gap-4">
+            <a href="https://wa.me/923213999201" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-[#25D366] transition-colors"><MessageCircle size={20} /></a>
             <a href="https://github.com/Amna903" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-white transition-colors"><Github size={20} /></a>
             <a href="https://www.linkedin.com/in/amna-atiq-58220529a/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-white transition-colors"><Linkedin size={20} /></a>
           </div>
@@ -48,6 +49,7 @@ export function Navbar() {
           <button onClick={() => scrollTo('projects')} className="text-lg font-bold text-left">Projects</button>
           <button onClick={() => scrollTo('contact')} className="text-lg font-bold text-left">Contact</button>
           <div className="flex gap-6 pt-4 border-t border-white/10">
+            <a href="https://wa.me/923213999201" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-[#25D366]"><MessageCircle size={24} /></a>
             <a href="https://github.com/Amna903" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-white"><Github size={24} /></a>
             <a href="https://www.linkedin.com/in/amna-atiq-58220529a/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-white"><Linkedin size={24} /></a>
             <a href="mailto:aseaamk75@gmail.com" className="text-muted-foreground hover:text-white"><Mail size={24} /></a>

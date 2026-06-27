@@ -14,4 +14,5 @@ export interface Project {
   github?: string;
   download?: boolean; // Indicates if downloadable files are available
   apk?: boolean; // Indicates if APK file is available
+  apkFile?: string; // Custom APK file name if different from default
 }

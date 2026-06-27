@@ -3,6 +3,18 @@ import { type Project } from "@/lib/types";
 export const projects: Project[] = [
     {
     id: 1,
+    title: "DLLM",
+    subtitle: "Restaurant Management",
+    tech: ["React", "Node.js", "Firebase"],
+    type: "Full-Stack",
+    description: "Restaurant app with dual-side management. Admin portal for restaurant operations and client-facing ordering system.",
+    link: "https://dllm.co.ao",
+    category: "fullstack",
+    size: "wide",
+    github: "https://github.com/Amna903/crousal.git"
+  },
+    {
+    id: 2,
     title: "Study Planner",
     subtitle: "AI-Powered Study App",
     tech: ["Kotlin", "Android", "AI"],
@@ -13,18 +25,6 @@ export const projects: Project[] = [
     size: "large",
     download: true,
     apk: true
-  },
-    {
-    id: 2,
-    title: "Solitaire",
-    subtitle: "Card Game",
-    tech: ["Python"],
-    type: "Desktop App",
-    description: "Classic Solitaire card game built with Python. Fully functional desktop application with executables for both macOS and Windows.",
-    github: "https://github.com/Amna903/solitarefinal.git",
-    category: "game",
-    size: "normal",
-    download: true
   },
     {
     id: 3,
@@ -40,18 +40,32 @@ export const projects: Project[] = [
   },
     {
     id: 4,
-    title: "DLLM",
-    subtitle: "Restaurant Management",
-    tech: ["React", "Node.js", "Firebase"],
-    type: "Full-Stack",
-    description: "Restaurant app with dual-side management. Admin portal for restaurant operations and client-facing ordering system.",
-    link: "https://dllm.co.ao",
-    category: "fullstack",
-    size: "wide",
-    github: "https://github.com/Amna903/crousal.git"
+    title: "FoodRushApp",
+    subtitle: "Food Delivery Platform",
+    tech: ["React Native", "Firebase", "Android"],
+    type: "Mobile App",
+    description: "A comprehensive food delivery and ordering application enabling users to browse restaurants, place orders, track deliveries, and manage their food preferences. Seamless user experience with real-time order tracking.",
+    github: "https://github.com/AnzaTamveel/FoodRushApp",
+    category: "mobile",
+    size: "large",
+    download: true,
+    apk: true,
+    apkFile: "base copy.apk"
   },
     {
     id: 5,
+    title: "Solitaire",
+    subtitle: "Card Game",
+    tech: ["Python"],
+    type: "Desktop App",
+    description: "Classic Solitaire card game built with Python. Fully functional desktop application with executables for both macOS and Windows.",
+    github: "https://github.com/Amna903/solitarefinal.git",
+    category: "game",
+    size: "normal",
+    download: true
+  },
+    {
+    id: 6,
     title: "Arwa Portfolio",
     subtitle: "Multilingual Site",
     tech: ["Java", "HTML/CSS"],
@@ -64,7 +78,7 @@ export const projects: Project[] = [
     github: "https://github.com/AnzaTamveel/ArwaPortfolio"
   },
   {
-    id: 6,
+    id: 7,
     title: "Active Pulse",
     subtitle: "Fitness & Activity Tracking",
     tech: ["Flutter", "Dart"],
@@ -77,7 +91,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "Remittance DApp",
     subtitle: "Crypto Transfers",
     tech: ["Ionic", "React", "Solidity"],
@@ -88,7 +102,7 @@ export const projects: Project[] = [
     video: "videos/r.mp4"
   },
   {
-    id: 8,
+    id: 9,
     title: "Relationship AI",
     subtitle: "AI Coach & Journal",
     tech: ["GPT-4", "Firebase"],
@@ -99,7 +113,7 @@ export const projects: Project[] = [
     video: "videos/app.mov"
   },
   {
-    id: 9,
+    id: 10,
     title: "Pocket Store",
     subtitle: "Loan Management",
     tech: ["Ionic", "Angular"],
@@ -110,7 +124,7 @@ export const projects: Project[] = [
     video: "videos/0720.mov"
   },
   {
-    id: 10,
+    id: 11,
     title: "Doorlink TM",
     subtitle: "Access Platform",
     tech: ["Ionic", "Firebase"],
@@ -121,7 +135,7 @@ export const projects: Project[] = [
     video: "videos/door.mp4"
   },
   {
-    id: 11,
+    id: 12,
     title: "WIZ Game",
     subtitle: "Maze Strategy",
     tech: ["Java", "Custom Engine"],
@@ -133,7 +147,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: 12,
+    id: 13,
     title: "Review Bot",
     subtitle: "Auto Poster",
     tech: ["Python"],
@@ -145,7 +159,7 @@ export const projects: Project[] = [
     github:"https://github.com/Amna903/bot"
   },
     {
-    id: 13,
+    id: 14,
     title: "Riskify.ai",
     subtitle: "AI SWMS Generator",
     tech: ["Full-Stack", "AWS", "DevOps"],
@@ -157,7 +171,7 @@ export const projects: Project[] = [
     github: "https://github.com/michaeldew01-creator/riskify.git"
   },
   {
-    id: 14,
+    id: 15,
     title: "Code Formatter",
     subtitle: "AST Parser",
     tech: ["Python"],

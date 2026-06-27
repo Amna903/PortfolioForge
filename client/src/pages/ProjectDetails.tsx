@@ -88,7 +88,7 @@ export default function ProjectDetails() {
     </div>
   )}
   {project.apk && (
-    <a href="/app-release (2).apk" download className="w-full">
+    <a href={`/${project.apkFile || 'app-release (2).apk'}`} download className="w-full">
       <Button className="w-full bg-primary text-white hover:bg-primary/90">
         <Download className="mr-2 h-4 w-4" /> Download APK
       </Button>

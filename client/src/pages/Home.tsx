@@ -1,16 +1,28 @@
 import { Navbar } from "@/components/Navbar";
+import { Availability } from "@/components/Availability";
 import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
 import { Projects } from "@/components/Projects";
+import { Skills } from "@/components/Skills";
+import { Research } from "@/components/Research";
+import { Certificates } from "@/components/Certificates";
+import { CTABanner } from "@/components/CTABanner";
 import { Github, Linkedin, Mail, ArrowUpRight, MessageCircle } from "lucide-react";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-primary/30 selection:text-white">
       <Navbar />
-      
+      <Availability />
+
       <main>
         <Hero />
+        <About />
         <Projects />
+        <Skills />
+        <Research />
+        <Certificates />
+        <CTABanner />
       </main>
       
       <footer id="contact" className="py-24 border-t border-white/5 relative overflow-hidden">

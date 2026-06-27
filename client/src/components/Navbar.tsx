@@ -28,6 +28,8 @@ export function Navbar() {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           <button onClick={() => scrollTo('projects')} className="text-sm font-bold hover:text-primary transition-colors">Projects</button>
+          <button onClick={() => scrollTo('skills')} className="text-sm font-bold hover:text-primary transition-colors">Skills</button>
+          <button onClick={() => scrollTo('research')} className="text-sm font-bold hover:text-primary transition-colors">Research</button>
           <button onClick={() => scrollTo('contact')} className="text-sm font-bold hover:text-primary transition-colors">Contact</button>
           <div className="w-px h-4 bg-white/10 mx-2"></div>
           <div className="flex gap-4">
@@ -45,9 +47,11 @@ export function Navbar() {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden absolute top-20 left-0 right-0 bg-card border-b border-white/10 p-6 flex flex-col gap-6 shadow-2xl">
-          <button onClick={() => scrollTo('projects')} className="text-lg font-bold text-left">Projects</button>
-          <button onClick={() => scrollTo('contact')} className="text-lg font-bold text-left">Contact</button>
+        <div className="md:hidden absolute top-20 left-0 right-0 bg-card border-b border-white/10 p-6 flex flex-col gap-4 shadow-2xl">
+          <button onClick={() => scrollTo('projects')} className="text-lg font-bold text-left hover:text-primary transition-colors">Projects</button>
+          <button onClick={() => scrollTo('skills')} className="text-lg font-bold text-left hover:text-primary transition-colors">Skills</button>
+          <button onClick={() => scrollTo('research')} className="text-lg font-bold text-left hover:text-primary transition-colors">Research</button>
+          <button onClick={() => scrollTo('contact')} className="text-lg font-bold text-left hover:text-primary transition-colors">Contact</button>
           <div className="flex gap-6 pt-4 border-t border-white/10">
             <a href="https://wa.me/923213999201" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-[#25D366]"><MessageCircle size={24} /></a>
             <a href="https://github.com/Amna903" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-white"><Github size={24} /></a>

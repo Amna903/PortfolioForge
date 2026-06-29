@@ -47,10 +47,7 @@ export const projects: Project[] = [
     description: "A comprehensive food delivery and ordering application enabling users to browse restaurants, place orders, track deliveries, and manage their food preferences. Seamless user experience with real-time order tracking.",
     github: "https://github.com/AnzaTamveel/FoodRushApp",
     category: "mobile",
-    size: "large",
-    download: true,
-    apk: true,
-    apkFile: "base copy.apk"
+link:"https://drive.google.com/file/d/15UHbYoLqfXGwE5o-BNwVivc9B09Fmkqx/view?usp=sharing",
   },
     {
     id: 5,

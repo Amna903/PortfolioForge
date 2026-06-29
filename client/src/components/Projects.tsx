@@ -6,6 +6,21 @@ import { useState } from "react";
 
 export function Projects() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
+  const categories = [
+    { id: "all", label: "All Projects" },
+    { id: "mobile", label: "App Dev" },
+    { id: "fullstack", label: "Web Dev" },
+    { id: "web3", label: "Web3" },
+    { id: "ai", label: "AI" },
+    { id: "tool", label: "Tools" },
+    { id: "game", label: "Games" },
+  ];
+
+  const filteredProjects = selectedCategory && selectedCategory !== "all"
+    ? projects.filter(p => p.category === selectedCategory)
+    : projects;
 
   return (
     <section id="projects" className="py-32 relative overflow-hidden px-6">
@@ -24,9 +39,35 @@ export function Projects() {
           <p className="text-white/50 text-lg font-light max-w-2xl">A selection of 15 projects spanning mobile, web3, AI, and more</p>
         </motion.div>
 
+        {/* Category Filter Tags */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          viewport={{ once: true }}
+          className="flex flex-wrap gap-3 mb-16"
+        >
+          {categories.map((category) => (
+            <button
+              key={category.id}
+              onClick={() => setSelectedCategory(category.id === "all" ? null : category.id)}
+              className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 border ${
+                (selectedCategory === category.id || (category.id === "all" && !selectedCategory))
+                  ? "bg-primary text-black border-primary"
+                  : "border-white/20 text-white/70 hover:text-white hover:border-primary/50 bg-white/5"
+              }`}
+            >
+              {category.label}
+            </button>
+          ))}
+        </motion.div>
+
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
+        <motion.div
+          layout
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          {filteredProjects.map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 30 }}
@@ -112,7 +153,7 @@ export function Projects() {
               </Link>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
